@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="/styles/map.css" type="text/css" />
+
+<div class="user-maps-list">
+
+
+  <!-- <div>
+    <% if (locals.maps) { %>
+      <ul id="map-list">
+        <% maps.map(function(map, i){ %>
+          <li>
+          <% console.log('inside ejs', map.title) %>
+
+           <%- `<a class='map-list-item'>${map.title}</a>` %>
+          </li>
+          <% }); %>
+        </ul>
+    <% } else { %>
+    <ul id="map-list">
+    </ul>
+    <% } %>
+  </div> -->
+  <div class="favourite-on-top">
+    <form action="/add_fav" method="POST" class="map_form">
+      <button id="add_favs"> <i id="star" class="fa-solid fa-star"></i> Favourite This Map <i id="star" class="fa-solid fa-star"></i></button>
+    </form>
+    </div>
+  <div class="marker-description-container">
+    <h4 class="coord-title-heading">Add Description To Your Marker</h4>
+    <input class="coord-title-input" type="text" required="" placeholder="Add Marker Description Before Clicking the Map">
+  </div>
+</div>

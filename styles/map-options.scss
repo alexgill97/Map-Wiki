@@ -1,0 +1,123 @@
+$primary: #630a9a;
+$secondary: #e91cf4;
+$white: #fff;
+$gray: rgba(187, 187, 187, 0.858);
+
+
+.form-input {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 2px;
+  width: 50%;
+}
+
+.map-form-input {
+  font-family: 'Concert One', cursive;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid $gray;
+  outline: 0;
+  font-size: 0.5;
+  color: $white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 0.5rem;
+  color: $white;
+}
+
+.map-form-input:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $primary;
+    font-weight:700;
+  }
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, $primary,$secondary);
+  border-image-slice: 1;
+}
+/* reset input */
+.form-input {
+  &:required,&:invalid { box-shadow:none; }
+}
+
+.test-button {
+  margin-top: 10px;
+}
+
+
+.map-options-container {
+  width: 100%;;
+  max-width: 400px;
+  height: 600px;
+  background-image: linear-gradient(to bottom right, #ff3c00 0%, #fd802c 74%);
+  // background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38");
+  box-shadow: 5px 20px 50px rgba(0, 0, 0, 0.776);
+  font-weight: 400;
+  word-break: break-word;
+  font-family: 'Concert One', cursive;
+  border-radius: 1em;
+  border: 2px solid hsl(261, 40%, 39%);
+  display: flex;
+  flex-direction: column;
+}
+
+.map-spots {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  // border: #630a9a 1px solid;
+  border-radius: 15px;
+
+  form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+
+  }
+}
+
+.name-your-map {
+  margin-bottom: 2px;
+}
+
+.search-map-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+ul {
+  padding-left: 0;
+  li {
+    list-style-type: none;
+
+  }
+}
+

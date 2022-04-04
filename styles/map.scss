@@ -1,0 +1,50 @@
+$white: #fff;
+
+
+.user-maps-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 12em;
+  width: 25em;
+  background-image: linear-gradient(to bottom right,#e61e07 0%, #ff6817 74%);
+  // background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38");
+  box-shadow: 5px 20px 50px rgba(0, 0, 0, 0.776);
+  font-weight: 400;
+  word-break: break-word;
+  font-family: 'Concert One', cursive;
+  border-radius: 1em;
+  border: 2px solid hsl(261, 40%, 39%);
+  padding-left: 1em;
+  margin-top: 5px;
+
+  ul {
+    padding-left: 0;
+    li {
+      list-style-type: none;
+
+    }
+  }
+}
+
+.favourite-on-top {
+  justify-content: flex-start;
+}
+
+
+
+.marker-description-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.coord-title-heading {
+  color: $white;
+
+}
+
+.coord-title-input {
+  width: 95%;
+  height: 5em;
+  text-align: center;
+}

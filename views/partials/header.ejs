@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="/styles/navbar.css" type="text/css" />
+
+<nav>
+  <div class="nav-logo">WikiMaps</div>
+  <div class="nav-prompt">
+
+    <% if (user) { %>
+      <form method="POST" action="/logout" class="logout-form">
+        <div class="form-group form-inline">
+          <button type="submit" class="" style="margin: 1em">Logout</button>
+        </div>
+      </form>
+    <% } else { %>
+      <div class="">
+        <div>
+          <a href="/login">Login</a>
+          <a href="/register">Register</a>
+        </div>
+      </div>
+
+      <% } %>
+    </nav>
+

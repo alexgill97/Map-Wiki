@@ -1,0 +1,56 @@
+
+
+nav {
+  padding: 1.5em;
+  height: 10vh;
+  width: 100%;
+  background-color:hsl(261, 40%, 39%);
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 11;
+  position: sticky;
+  top: 0;
+  background-image: linear-gradient(315deg, hsl(261, 40%, 39%), hsl(261, 41%, 22%));
+
+
+}
+
+.fa-brands {
+  padding-left: 0.5em;
+}
+
+.nav-prompt {
+  width: 100%;
+  padding: 0 1em 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: flex-end;
+  font-family: 'Concert One', cursive;
+}
+
+.nav-prompt > div {
+  padding: 10px;
+  margin: 0.5em;
+  border: 1px solid #FFFFFF;
+  border-radius: 10%;
+}
+
+.nav-prompt > div:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+  color: black;
+}
+
+.nav-logo {
+  font-size: 2em;
+  padding-left: 50px;
+  font-family: 'Concert One', cursive;
+}
+
+a {
+  color: #FFFFFF;
+}
+

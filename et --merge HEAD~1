@@ -1,0 +1,44 @@
+[33m9d96e49[m HEAD@{0}: merge mar-15-afternoon: Fast-forward
+[33m245b781[m HEAD@{1}: checkout: moving from mar-15-afternoon to master
+[33m9d96e49[m HEAD@{2}: commit: reorganized html/scss files and added form styling
+[33m245b781[m HEAD@{3}: checkout: moving from master to mar-15-afternoon
+[33m245b781[m HEAD@{4}: pull: Fast-forward
+[33ma6e3cda[m HEAD@{5}: merge mar15-morning: Fast-forward
+[33m4f076e4[m HEAD@{6}: checkout: moving from mar15-morning to master
+[33ma6e3cda[m HEAD@{7}: commit: added map list interactivity, update map, add map
+[33m4f076e4[m HEAD@{8}: checkout: moving from master to mar15-morning
+[33m4f076e4[m HEAD@{9}: pull: Fast-forward
+[33m70fe99e[m HEAD@{10}: commit: got side tracked with more css
+[33m9adad17[m HEAD@{11}: commit: added some css styling
+[33m30e161b[m HEAD@{12}: merge mar-14-evening: Fast-forward
+[33m4c4d795[m HEAD@{13}: checkout: moving from mar-14-evening to master
+[33m30e161b[m HEAD@{14}: commit: refactored server logic
+[33m4c4d795[m HEAD@{15}: checkout: moving from master to mar-14-evening
+[33m4c4d795[m HEAD@{16}: reset: moving to origin/master
+[33ma7b34eb[m HEAD@{17}: commit: initialized linking database to google api
+[33m8e1cf2b[m HEAD@{18}: pull: Fast-forward
+[33m66a948e[m HEAD@{19}: pull: Fast-forward
+[33m1a39bb8[m HEAD@{20}: commit: fixed registration query and added cookie upon registration
+[33m6c21157[m HEAD@{21}: reset: moving to origin/master
+[33m725d925[m HEAD@{22}: pull: Fast-forward
+[33m22802f9[m HEAD@{23}: checkout: moving from mar12-night to master
+[33m22802f9[m HEAD@{24}: checkout: moving from master to mar12-night
+[33m22802f9[m HEAD@{25}: pull: Fast-forward
+[33me20af1e[m HEAD@{26}: pull: Fast-forward
+[33m56fdd69[m HEAD@{27}: reset: moving to origin/master
+[33ma332d9f[m HEAD@{28}: commit: added login page and updated styling
+[33mf7891b6[m HEAD@{29}: pull: Fast-forward
+[33me39d3f7[m HEAD@{30}: commit: initialized database, added fake user data
+[33md23f94d[m HEAD@{31}: pull: Fast-forward
+[33m6dc500b[m HEAD@{32}: pull: Fast-forward
+[33m3fe5b4a[m HEAD@{33}: merge alex-nav-dev: Fast-forward
+[33m7864143[m HEAD@{34}: checkout: moving from alex-nav-dev to master
+[33m3fe5b4a[m HEAD@{35}: commit: added nav and began css styling
+[33m7864143[m HEAD@{36}: checkout: moving from master to alex-nav-dev
+[33m7864143[m HEAD@{37}: commit: fixed map styling
+[33m3601167[m HEAD@{38}: pull: Fast-forward
+[33mf167983[m HEAD@{39}: checkout: moving from addMap to master
+[33mf167983[m HEAD@{40}: checkout: moving from master to addMap
+[33mf167983[m HEAD@{41}: pull: Fast-forward
+[33m2c730d0[m HEAD@{42}: pull: Fast-forward
+[33ma7efb9b[m HEAD@{43}: clone: from git@github.com:Lauffern1995/Midterm.git

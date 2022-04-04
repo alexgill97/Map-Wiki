@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="/styles/map-options.css" type="text/css" />
+
+<div class="map-options-container" style="border: 2px solid black">
+
+  <div class="form-container">
+    <form class="create-map-form" action="/create_map" method="POST">
+      <div class="form-input">
+        <input class="map-form-input" type="text" id="name-your-map" name="title" placeholder="Name your map!" >
+        <label for="name-your-map" class="form__label">Name Your Map</label>
+      </div>
+      <div class="form-input">
+        <input class="map-form-input" type="text" id="map-about" name="description" placeholder="What's this map about?">
+        <label for="map-about" class="form__label">Add Description</label>
+      </div>
+        <button id>Add Map</button>
+    </form>
+  </div>
+
+  <div class="form-container">
+    <form class="create-map-form" action="/update_map" method="POST">
+      <div class="form-input">
+        <input class="map-form-input" type="input" id="update-title" name="title" placeholder="Update your map!" >
+        <label for="update-title" class="form__label">Title</label>
+      </div>
+      <div class="form-input">
+        <input class="map-form-input" type="text" id="update-description" name="description" placeholder="Update Desc">
+        <label for="update-description" class="form__label">Description</label>
+      </div>
+      <div class="form-input">
+      </div>
+        <button id='update-map' class="test-button">Update Map</button>
+    </form>
+  </div>
+<div class="form-container">
+
+
+    <div class="form-container">
+      <form class="create-map-form" action="/search_map" method="POST">
+        <div class="form-input">
+        <input class="map-form-input" type="text" id="search-your-map" name="title" placeholder="Search For Map!">
+      <label for="search-your-map" class="form__label">Search for a Map</label>
+    </div>
+      <button class="test-button">Search Maps</button>
+    </form>
+  </div>
+
+
+      <div class="search-map-list">
+        <% if (locals.maps) { %>
+          <ul id="map-list">
+            <% maps.map(function(map, i){ %>
+              <li>
+
+
+               <%- `<a class='map-list-item'>${map.title}</a>` %>
+              </li>
+              <% }); %>
+            </ul>
+        <% } else { %>
+        <ul id="map-list">
+        </ul>
+        <% } %>
+
+    </div>
+
+</div>
+</div>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>MapWiki, the free location encyclopedia</title>
+
+
+  <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+  <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/main.css" type="text/css" />
+
+  <!-- Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+
+
+  <!-- <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
+
+  <script type="text/javascript" src="/scripts/init_map.js"></script> -->
+
+
+</head>
+
+
+<%- include('partials/header') %>
+
+
+
+
+<body>
+  <div class="map-container">
+    <% if (user) { %>
+    <div class="profile-card">
+      <div class="group-icon-title">
+      <i class="fa-solid fa-user animate-charcter"></i>
+      <div class="animate-charcter">
+        <%= name.name %>
+      </div>
+      <div id="current-map"></div>
+      </div>
+      <div class="user-map-container">
+      <p class="sub-title">Your Maps: </p>
+      <ul class="no-bullet-list-users-maps">
+        <% user_maps.map(function(maps, i){ %>
+        <li>
+             <%- `<a href=''>${user_maps[i].title}</a>` %>
+        </li>
+            <% }); %>
+      </ul>
+    </div>
+    <div class="fav-map-container">
+      <p class="sub-title">Your Fav Maps:</p></p>
+      <ul class="no-bullet-list-fav">
+        <% fav_maps.map(function(maps, i){ %>
+        <li>
+             <%- `<a href=''>${maps.title}</a>` %>
+        </li>
+            <% }); %>
+      </ul>
+    </div>
+    </div>
+    <% } %>
+    <div class="map-options-container">
+      <%- include('partials/map-options') %>
+    </div>
+  <div class="map-and-list">
+    <div class="add-favs">
+    </div>
+    <div id="map"></div>
+    <%- include('partials/map') %>
+  </div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtIjXHDQ9Blne5H3PfOpa1xohVP5gbpS4"
+  ></script>
+  <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
+  <script type="text/javascript" src="/scripts/app.js"></script>
+  <script type="text/javascript" src="/scripts/init_map.js"></script>
+</div>
+</body>
+</html>
